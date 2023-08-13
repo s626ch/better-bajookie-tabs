@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         better bajookie tab names
-// @version      0.6.26
+// @version      0.6.26.1
 // @description  yeah
 // @author       stitch
 // @match        https://bajookie.bingle.plus/*
@@ -19,8 +19,8 @@
         [urlprfx + "Item/"]: getTitleFromSelector("body > div > div.row > div.p-2.desccol > h3"),
         [urlprfx + "Home"]: "Home",
         [urlprfx + "Avatar"]: "Avatar",
-        [urlprfx + "Users"]: "Users",
         [urlprfx + "Users/"]: getTitleFromSelector("body > div > div:nth-child(1) > div.col.border-right.p-2 > div > div.col > h4"),
+        [urlprfx + "Users"]: "Users",
         [urlprfx + "Groups"]: "Groups",
         [urlprfx + "Group/"]: getTitleFromSelector("body > div > div.row.border-bottom > div > div.row > div.col > h4")
     };
