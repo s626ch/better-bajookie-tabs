@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         better bajookie tab names
-// @version      0.6.26.1
+// @version      0.6.3
 // @description  yeah
 // @author       stitch
 // @match        https://bajookie.bingle.plus/*
@@ -22,7 +22,11 @@
         [urlprfx + "Users/"]: getTitleFromSelector("body > div > div:nth-child(1) > div.col.border-right.p-2 > div > div.col > h4"),
         [urlprfx + "Users"]: "Users",
         [urlprfx + "Groups"]: "Groups",
-        [urlprfx + "Group/"]: getTitleFromSelector("body > div > div.row.border-bottom > div > div.row > div.col > h4")
+        [urlprfx + "Group/"]: getTitleFromSelector("body > div > div.row.border-bottom > div > div.row > div.col > h4"),
+        [urlprfx + "Settings"]: "Settings",
+        [urlprfx + "Create"]: "Create",
+        [urlprfx + "Money"]: "Transactions",
+        [urlprfx + "Gifts"]: "Gifts"
     };
     const currentURL = window.location.href;
     const defaultTitle = "Bajookie"; // fallback if for some fucking reason i forgot something
